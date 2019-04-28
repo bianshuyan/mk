@@ -1,1 +1,1 @@
-The mk.scm is almost the same as the code in the reasoned schemer(2nd).
+The code is the ugly implementation of miniKanren.
