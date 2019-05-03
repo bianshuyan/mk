@@ -28,7 +28,7 @@
   (syntax-rules ()
     ((_) fail)
     ((_ g) g)
-    ((_ g0 g1 ...) (disj g0 (disj* g1 ...)))))
+    ((_ g0 g1 ...) (disj g0 (lambda (s) ((disj* g1 ...) s))))))
 (define-syntax conj*
   (syntax-rules ()
     ((_) succeed)
