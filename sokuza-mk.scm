@@ -49,7 +49,7 @@
 (define-syntax fresh
   (syntax-rules ()
     ((_ (x ...) g ...)
-     (let ((x (var 'x)) ...) (conj g ...)))))
+     (let ((x (var 'x)) ...) (conj* g ...)))))
 (define-syntax conde
   (syntax-rules ()
     ((_ (g ...) ...)
