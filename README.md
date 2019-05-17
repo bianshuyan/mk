@@ -1,1 +1,1 @@
-The code is the ugly implementation of miniKanren.
+The code is easy and simple.
