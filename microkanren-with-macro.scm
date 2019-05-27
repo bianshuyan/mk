@@ -1,7 +1,7 @@
 (define (var? x) (vector? x))
 (define (eqvar? x y) (= (vector-ref x 0) (vector-ref y 0)))
 (define (succeed s/c) (list s/c))
-(define (fail s/c) (list s/c))
+(define (fail s/c) '())
 (define (walk v s)
   (let ((a (and (var? v) (assp (lambda (x) (eqvar? v x)) s))))
     (if a (walk (cdr a) s) v)))
