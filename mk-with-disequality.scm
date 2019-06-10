@@ -40,7 +40,7 @@
       (k '())
       (let ((c0 (car c*)))
         (let ((c1 (unify (map car c0) (map cdr c0) s)))
-          (if c1 (if (eq? c0 c1) #f
+          (if c1 (if (eq? s c1) #f
                      (verify (cdr c*) s (lambda (x) (k (cons (pre c1 s) x)))))
               (verify (cdr c*) s k))))))
 (define (pre x y)
